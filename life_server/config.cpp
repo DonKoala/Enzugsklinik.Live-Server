@@ -137,6 +137,7 @@ class CfgFunctions
 			class setObjVar {};
 			class vehicleIsDead {};
 		};
+	
 		
 		class Airdrop
 		{
@@ -160,13 +161,7 @@ class CfgFunctions
 			class goOnDuty {};
 		};
 		
-		class Smartphone
-		{
-			file = "\life_server\Functions\Smartphone";
-			class handleMessages {};
-			class msgRequest {};
-			class cleanupMessages {};
-		};	
+	
 		
 		class Housing
 		{
@@ -201,8 +196,20 @@ class CfgFunctions
 			class config {};
 			class getActions {};
 		};
+		class Smartphone
+		{
+            file = "\life_server\Functions\Smartphone";
+            class handleMessages {};
+            class msgRequest {};
+			class cleanupMessages {};
+		}; 
+		
+		
 		
 	};
+	
+           
+	
 };
 
 class CfgVehicles
