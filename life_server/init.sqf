@@ -7,6 +7,7 @@ publicVariable "life_server_isReady";
 [] execFSM "\life_server\cleanup.fsm";
 [] execVM "\life_server\functions.sqf";
 [] execVM "\life_server\eventhandlers.sqf";
+[] execVM "\life_server\Functions\Schiffswrack\fn_generateschiffwrackAuto.sqf";
 
 
 //I am aiming to confuse people including myself, ignore the ui checks it's because I test locally.
