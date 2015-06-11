@@ -13,7 +13,7 @@ schiffsw_obj_arr = ["Land_Wreck_Traw_F","Land_Wreck_Traw2_F"];
 schiffsw_chance = 100;
 schiffsw_positions = [[5065.5,3013.89,-185.533],[17414,3368.88,-185.579],[28644.6,12328,-185.885],[22327.9,27378.2,-185.53],[10524.1,26711.8,-171.428]];
 _schiffsw_time_interval = [0,1]; //Time given in hours, this is the interval in which the shipwreck should take spawn
-schiffsw_loot_array = [["apple",20],["peach",20]];
+schiffsw_loot_array = [["goldschatz",20],["goldschatz",20]];
 schiffsw_loot_amount = 1;
 
 //######################## CONFIGURATION END ########################
@@ -38,7 +38,7 @@ _toWait = (random (schiffsw_time_max - schiffsw_time_min)) + schiffsw_time_min;
 sleep _toWait;
 
 // schiffsw STARTEN
-[[5,"<t size='1.4'><t color='#A5DF00'>SCHIFFSWRACK</t></t><br/><br/><t size='1'>A sunken ship has been located! It may contain important items, it has been marked on your map!</t>"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+[[5,"<t size='1.4'><t color='#A5DF00'>SCHIFFSWRACK</t></t><br/><br/><t size='1'>Ein gesunkenes Schiff wurde gesichtet! Es hat Goldschätze an Board und wurde auf deiner Karte markiert!</t>"],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 _poses = count schiffsw_positions;
 _inArr = floor(random _poses);
 _dest = schiffsw_positions select _inArr;
