@@ -6,7 +6,7 @@
 	All servers are allowed to use this code, modify and publish it. Every modified release of this script must contain "Original by RTT"!
 */
 
-schiffsw_obj_arr = ["Land_Wreck_Traw_F","Land_Wreck_Traw2_F"];
+schiffsw_obj_arr = ["Land_Wreck_Traw_F","Land_Wreck_Traw_F"];
 
 //########################## CONFIGURATION ##########################
 
@@ -61,7 +61,7 @@ _markerText = createMarker ["schiffswmarkertext", _dest];
 
 _type = "";
 _chance = floor(random 2);
-if (_chance==1) then {_type = "Land_Wreck_Traw_F"} else {_type = "Land_Wreck_Traw2_F"};
+if (_chance==1) then {_type = "Land_Wreck_Traw_F"} else {_type = "Land_Wreck_Traw_F"};
 
 _xPOS = floor(random 400);
 _yPOS = floor(random 400);
